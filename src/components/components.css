@@ -1,0 +1,774 @@
+/* Create Exam Styles */
+.create-exam {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+}
+
+.question-editor {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+.question-editor textarea {
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: white;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.option {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.questions-preview {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+/* Take Exam Styles */
+.take-exam {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.exam-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.exam-header h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #646cff;
+}
+
+.question {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+.question .options {
+  margin-top: 1rem;
+}
+
+.question .option {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.question .option:hover {
+  background-color: #333;
+}
+
+.exam-results {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.auth-option {
+  background: #292828;
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.auth-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #646cff;
+  color: white;
+  border: none;
+}
+
+.auth-buttons button:hover {
+  background-color: #535bf2;
+}
+
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+}
+
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form button {
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #646cff;
+  color: white;
+  border: none;
+}
+
+.auth-form button[type="button"] {
+  background-color: #666;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Add these styles to your existing CSS */
+
+.results-table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.results-table th,
+.results-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-table th {
+  font-weight: 600;
+  color: #888;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-badge.pass {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4CAF50;
+}
+
+.status-badge.fail {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+}
+
+.view-results-btn {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-results-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateX(-4px);
+}
+
+.student-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.student-info p {
+  margin: 0.5rem 0;
+  color: #888;
+}
+
+.no-results {
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.exam-history {
+  margin-top: 2rem;
+}
+
+.admin-results-view,
+.student-results-view {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.mb-4 {
+  background-color: #f00f0f; /* This is causing a red background */
+}
+
+/* Add at the beginning of the file */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 2rem;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #3b82f6;
+}
+
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #e2e8f0;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.password-hint {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+
+/* Ensure all pages have the dark background */
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure all containers have proper background */
+.exam-system,
+.admin-dashboard,
+.student-dashboard,
+.take-exam,
+.create-exam,
+.exam-results,
+.auth-container,
+.auth-form {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+/* Add these styles for the exams list container */
+.exams-list {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.exams-list:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.exams-list h3 {
+  color: #3b82f6;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.exams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.exam-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.exam-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.exam-card h4 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.exam-info {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.exam-info p {
+  color: #e2e8f0;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+.exam-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.exam-actions button {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.exam-actions button:first-child {
+  background: linear-gradient(45deg, #3b82f6, #60a5fa);
+  color: white;
+}
+
+.exam-actions button:first-child:hover {
+  background: linear-gradient(45deg, #2563eb, #3b82f6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.exam-actions .delete-btn {
+  background: linear-gradient(45deg, #ef4444, #f87171);
+  color: white;
+}
+
+.exam-actions .delete-btn:hover {
+  background: linear-gradient(45deg, #dc2626, #ef4444);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.no-exams {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+/* Add animation for the exams list */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.exams-list {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.exam-card {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.exam-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.exam-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.exam-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .exams-list {
+    padding: 1.5rem;
+  }
+  
+  .exams-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .exam-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Add these styles for the new question types */
+.question-editor select {
+  width: 100%;
+  padding: 0.8rem;
+  background: white;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  color: #1e293b;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-editor select:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+
+.question-editor select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.question-editor select option {
+  background: white;
+  color: #1e293b;
+  padding: 0.8rem;
+}
+
+.question-editor select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231e293b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2em;
+  padding-right: 2.5rem;
+}
+
+.true-false-options {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.true-false-options .option {
+  flex: 1;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.true-false-options .option:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.short-answer-settings,
+.essay-settings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+}
+
+.question-preview {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-type {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.question-points {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.options-preview {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.option-preview {
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.option-preview.correct {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+.answer-requirements {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.add-question-btn {
+  background: linear-gradient(45deg, #3b82f6, #60a5fa);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.create-exam-btn {
+  background: linear-gradient(45deg, #10b981, #34d399);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.add-question-btn:hover,
+.create-exam-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Update create exam header */
+.create-exam .exam-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Update take exam header for better layout */
+.take-exam .exam-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.take-exam .exam-header .timer {
+  justify-self: end;
+}
+
+/* Update result header */
+.exam-results .result-header {
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .take-exam .exam-header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .take-exam .exam-header .timer {
+    justify-self: start;
+  }
+
+  .back-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
